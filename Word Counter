@@ -1,0 +1,23 @@
+def word_count(text):
+    
+    words = text.split()
+   
+    return len(words)
+
+def main():
+    
+    text = input("Enter a sentence or paragraph: ")
+
+    
+    if not text:
+        print("Error: Empty input. Please enter some text.")
+        return
+
+    
+    count = word_count(text)
+
+    
+    print(f"Word count: {count}")
+
+if __name__ == "__main__":
+    main()
